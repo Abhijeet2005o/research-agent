@@ -15,7 +15,21 @@ A small autonomous agent that takes a research goal, plans the steps, uses two t
 ## How to run
 
 ```bash
-pip install -r requirements.txt
+main.py                 # Entry point
+agent/
+  planner.py            # Creates the plan
+  executor.py           # Runs the plan and handles failures
+  tools/
+    web_search.py       # Tool 1: live web search
+    analyzer.py         # Tool 2: ranking + keywords
+docs/
+  WRITEUP.md            # Design decisions and limitations
+  architecture.txt      # Simple architecture diagram
+transcripts/            # Sample run reportspip install -r requirements.txt
+transcripts/run1_ai_agents.md — normal successful run
+transcripts/run2_failure.md — induced failure + recovery
+transcripts/final_normal.md — another normal run
+transcripts/final_failure.md — another failure + recovery run
 
 # Normal run
 python main.py "Research and summarize the top 3 developments in AI agents from the last week"
