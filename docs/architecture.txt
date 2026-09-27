@@ -1,0 +1,10 @@
+User Goal
+    ↓
+Planner  →  creates visible plan
+    ↓
+Executor (control loop)
+    ├── Tool 1: Web Search
+    ├── Tool 2: Analyzer (rank + keywords)
+    └── Self-correction (if search fails → retry with broader query)
+    ↓
+Final Summary + Report
